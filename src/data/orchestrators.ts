@@ -196,7 +196,20 @@ export const orchestrationTools: OrchestrationToolEntry[] = [
     note: "Connects task planning, Codex execution, delegated-agent visibility, and review; the Apple Silicon and Intel public beta requires macOS 15+, uses the user's own supported Codex account, and is not yet notarized by Apple.",
     tags: ["coding agents", "Codex", "kanban", "subagents", "code review", "macOS"],
     ctaLabel: "Open Orchestrator"
-  }
+  },
+
+  {
+    slug: "dsh-collab-kit",
+    title: "dsh-collab-kit",
+    url: "https://github.com/Flauntxy/dsh-collab-kit",
+    sourceName: "dsh-collab-kit GitHub repository",
+    mark: "DC",
+    summary:
+      "MIT-licensed, single-file Python helper for local cross-session messages: post writes a note and flips a flag; a waiter in the target session exits when the flag changes so that conversation can continue.",
+    note:
+      "Stdlib-only and local-files-only; tracked as agent-friendly messaging tooling for separate sessions on one machine, not as an orchestrator runtime.",
+    tags: ["open source", "MIT", "local-first", "Python", "cross-session"]
+  },
 ];
 
 export const governanceTools: OrchestrationToolEntry[] = [
